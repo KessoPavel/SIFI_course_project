@@ -1,0 +1,52 @@
+|write_counter
+en <= wr_counter:inst.q[0]
+wr => wr_counter:inst.clock
+
+
+|write_counter|wr_counter:inst
+clk_en => lpm_counter:lpm_counter_component.clk_en
+clock => lpm_counter:lpm_counter_component.clock
+q[0] <= lpm_counter:lpm_counter_component.q[0]
+
+
+|write_counter|wr_counter:inst|lpm_counter:lpm_counter_component
+clock => cntr_3ai:auto_generated.clock
+clk_en => cntr_3ai:auto_generated.clk_en
+cnt_en => ~NO_FANOUT~
+updown => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+aset => ~NO_FANOUT~
+aconst => ~NO_FANOUT~
+aload => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+sset => ~NO_FANOUT~
+sconst => ~NO_FANOUT~
+sload => ~NO_FANOUT~
+data[0] => ~NO_FANOUT~
+cin => ~NO_FANOUT~
+q[0] <= cntr_3ai:auto_generated.q[0]
+cout <= <GND>
+eq[0] <= <GND>
+eq[1] <= <GND>
+eq[2] <= <GND>
+eq[3] <= <GND>
+eq[4] <= <GND>
+eq[5] <= <GND>
+eq[6] <= <GND>
+eq[7] <= <GND>
+eq[8] <= <GND>
+eq[9] <= <GND>
+eq[10] <= <GND>
+eq[11] <= <GND>
+eq[12] <= <GND>
+eq[13] <= <GND>
+eq[14] <= <GND>
+eq[15] <= <GND>
+
+
+|write_counter|wr_counter:inst|lpm_counter:lpm_counter_component|cntr_3ai:auto_generated
+clk_en => counter_reg_bit1a[0].IN0
+clock => counter_reg_bit1a[0].CLK
+q[0] <= counter_reg_bit1a[0].REGOUT
+
+
