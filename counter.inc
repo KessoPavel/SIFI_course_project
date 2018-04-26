@@ -20,5 +20,5 @@ FUNCTION counter
 )
 
 RETURNS (
-	q[4..0]
+	q[1..0]
 );

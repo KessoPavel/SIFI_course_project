@@ -15,7 +15,7 @@
 
 FUNCTION compare_31 
 (
-	dataa[4..0]
+	dataa[1..0]
 )
 
 RETURNS (

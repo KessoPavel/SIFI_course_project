@@ -1,6 +1,18 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="cache">
-		<CBX_INST_ENTRY INSTANCE_NAME="|write_counter|wr_counter:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3ai.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|lpm_compare1:inst62|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_g8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|tag_compare:inst15|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_dig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|write_counter:inst27|wr_counter:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3ai.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|counter:inst17|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_q3i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|lpm_compare0:inst69|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_kni.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|lpm_compare2:inst63|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_g8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|lpm_compare3:inst66|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_g8j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|tag_compare:inst8|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_dig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|write_counter:inst24|wr_counter:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3ai.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|tag_compare:inst18|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_dig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|tag_compare:inst9|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_dig.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|write_counter:inst12|wr_counter:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3ai.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cachMem|write_counter:inst21|wr_counter:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_3ai.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

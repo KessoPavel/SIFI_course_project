@@ -38,7 +38,7 @@ INCLUDE "lpm_compare.inc";
 
 SUBDESIGN compare_31
 (
-	dataa[4..0]	 : INPUT;
+	dataa[1..0]	 : INPUT;
 	AeB	 : OUTPUT;
 )
 
@@ -48,14 +48,14 @@ VARIABLE
 			LPM_HINT = "ONE_INPUT_IS_CONSTANT=YES",
 			LPM_REPRESENTATION = "UNSIGNED",
 			LPM_TYPE = "LPM_COMPARE",
-			LPM_WIDTH = 5
+			LPM_WIDTH = 2
 			);
 
 BEGIN
 
 	AeB = lpm_compare_component.AeB;
-	lpm_compare_component.dataa[4..0] = dataa[4..0];
-	lpm_compare_component.datab[4..0] = 31;
+	lpm_compare_component.dataa[1..0] = dataa[1..0];
+	lpm_compare_component.datab[1..0] = 3;
 END;
 
 
@@ -72,23 +72,23 @@ END;
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
--- Retrieval info: PRIVATE: PortBValue NUMERIC "31"
+-- Retrieval info: PRIVATE: PortBValue NUMERIC "3"
 -- Retrieval info: PRIVATE: Radix NUMERIC "2"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: SignedCompare NUMERIC "0"
 -- Retrieval info: PRIVATE: aclr NUMERIC "0"
 -- Retrieval info: PRIVATE: clken NUMERIC "0"
 -- Retrieval info: PRIVATE: isPortBConstant NUMERIC "1"
--- Retrieval info: PRIVATE: nBit NUMERIC "5"
+-- Retrieval info: PRIVATE: nBit NUMERIC "2"
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ONE_INPUT_IS_CONSTANT=YES"
 -- Retrieval info: CONSTANT: LPM_REPRESENTATION STRING "UNSIGNED"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_COMPARE"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "5"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "2"
 -- Retrieval info: USED_PORT: AeB 0 0 0 0 OUTPUT NODEFVAL AeB
--- Retrieval info: USED_PORT: dataa 0 0 5 0 INPUT NODEFVAL dataa[4..0]
+-- Retrieval info: USED_PORT: dataa 0 0 2 0 INPUT NODEFVAL dataa[1..0]
 -- Retrieval info: CONNECT: AeB 0 0 0 0 @AeB 0 0 0 0
--- Retrieval info: CONNECT: @dataa 0 0 5 0 dataa 0 0 5 0
--- Retrieval info: CONNECT: @datab 0 0 5 0 31 0 0 0 0
+-- Retrieval info: CONNECT: @dataa 0 0 2 0 dataa 0 0 2 0
+-- Retrieval info: CONNECT: @datab 0 0 2 0 3 0 0 0 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL compare_31.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL compare_31.inc TRUE
