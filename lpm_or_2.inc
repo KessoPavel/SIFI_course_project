@@ -13,21 +13,18 @@
 --applicable agreement for further details.
 
 
-FUNCTION decode4 
+FUNCTION lpm_or_2 
 (
-	data[3..0],
-	enable
+	data0,
+	data1,
+	data2,
+	data3,
+	data4,
+	data5,
+	data6,
+	data7
 )
 
 RETURNS (
-	eq1,
-	eq10,
-	eq2,
-	eq3,
-	eq4,
-	eq5,
-	eq6,
-	eq7,
-	eq8,
-	eq9
+	result
 );
