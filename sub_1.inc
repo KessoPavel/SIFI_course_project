@@ -13,23 +13,11 @@
 --applicable agreement for further details.
 
 
-FUNCTION decode4 
+FUNCTION sub_1 
 (
-	data[3..0],
-	enable
+	dataa[2..0]
 )
 
 RETURNS (
-	eq0,
-	eq1,
-	eq10,
-	eq11,
-	eq2,
-	eq3,
-	eq4,
-	eq5,
-	eq6,
-	eq7,
-	eq8,
-	eq9
+	result[2..0]
 );

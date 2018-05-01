@@ -148,6 +148,38 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
+(pin
+	(output)
+	(rect 1256 560 1432 576)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "pin_name" (rect 90 0 137 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(pin
+	(output)
+	(rect 1256 896 1432 912)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "pin_name1" (rect 90 0 143 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
 (symbol
 	(rect 448 472 496 504)
 	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
@@ -1442,10 +1474,6 @@ applicable agreement for further details.
 	(pt 1312 464)
 )
 (connector
-	(pt 1256 608)
-	(pt 1256 464)
-)
-(connector
 	(text "clk" (rect 1264 400 1278 412)(font "Arial" ))
 	(pt 1312 416)
 	(pt 1256 416)
@@ -1634,10 +1662,6 @@ applicable agreement for further details.
 (connector
 	(pt 1480 696)
 	(pt 864 696)
-)
-(connector
-	(pt 1256 800)
-	(pt 1256 944)
 )
 (connector
 	(pt 1232 944)
@@ -2010,6 +2034,22 @@ applicable agreement for further details.
 	(pt 984 912)
 	(bus)
 )
+(connector
+	(pt 1256 608)
+	(pt 1256 568)
+)
+(connector
+	(pt 1256 568)
+	(pt 1256 464)
+)
+(connector
+	(pt 1256 800)
+	(pt 1256 904)
+)
+(connector
+	(pt 1256 904)
+	(pt 1256 944)
+)
 (junction (pt 760 440))
 (junction (pt 760 776))
 (junction (pt 1584 960))
@@ -2020,3 +2060,5 @@ applicable agreement for further details.
 (junction (pt 984 912))
 (junction (pt 864 872))
 (junction (pt 864 808))
+(junction (pt 1256 568))
+(junction (pt 1256 904))
