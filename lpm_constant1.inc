@@ -13,7 +13,7 @@
 --applicable agreement for further details.
 
 
-FUNCTION lpm_constant0 
+FUNCTION lpm_constant1 
 (
 
 )
