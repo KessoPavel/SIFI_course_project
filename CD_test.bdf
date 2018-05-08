@@ -213,6 +213,38 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8)(line_width 1))
 	)
 )
+(pin
+	(output)
+	(rect 456 312 632 328)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "dec_en" (rect 90 0 125 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
+(pin
+	(output)
+	(rect 456 368 632 384)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "t" (rect 90 0 93 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8)(line_width 1))
+		(line (pt 52 4)(pt 78 4)(line_width 1))
+		(line (pt 52 12)(pt 78 12)(line_width 1))
+		(line (pt 52 12)(pt 52 4)(line_width 1))
+		(line (pt 78 4)(pt 82 8)(line_width 1))
+		(line (pt 82 8)(pt 78 12)(line_width 1))
+		(line (pt 78 12)(pt 82 8)(line_width 1))
+	)
+)
 (symbol
 	(rect 664 192 880 320)
 	(text "Memory" (rect 5 0 49 14)(font "Arial" (font_size 8)))
@@ -264,9 +296,9 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 216 96 432 288)
+	(rect 216 96 432 320)
 	(text "CD" (rect 5 0 21 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -344,8 +376,22 @@ applicable agreement for further details.
 		(text "n[2..0]" (rect 160 155 195 169)(font "Arial" (font_size 8)))
 		(line (pt 216 160)(pt 200 160)(line_width 3))
 	)
+	(port
+		(pt 216 176)
+		(output)
+		(text "pin_name" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "pin_name" (rect 141 171 195 185)(font "Arial" (font_size 8)))
+		(line (pt 216 176)(pt 200 176)(line_width 1))
+	)
+	(port
+		(pt 216 192)
+		(output)
+		(text "t" (rect 0 0 3 14)(font "Arial" (font_size 8)))
+		(text "t" (rect 192 187 195 201)(font "Arial" (font_size 8)))
+		(line (pt 216 192)(pt 200 192)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 200 176)(line_width 1))
+		(rectangle (rect 16 16 200 208)(line_width 1))
 	)
 )
 (connector
@@ -543,6 +589,30 @@ applicable agreement for further details.
 	(pt 440 0)
 	(pt 568 0)
 	(bus)
+)
+(connector
+	(pt 448 272)
+	(pt 448 320)
+)
+(connector
+	(pt 448 320)
+	(pt 456 320)
+)
+(connector
+	(pt 448 272)
+	(pt 432 272)
+)
+(connector
+	(pt 432 288)
+	(pt 440 288)
+)
+(connector
+	(pt 440 376)
+	(pt 440 288)
+)
+(connector
+	(pt 440 376)
+	(pt 456 376)
 )
 (junction (pt 184 144))
 (junction (pt 488 224))

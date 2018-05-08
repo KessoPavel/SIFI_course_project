@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 232 208)
+	(rect 16 16 232 240)
 	(text "CD" (rect 5 0 21 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(text "inst" (rect 8 208 25 220)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -100,7 +100,21 @@ applicable agreement for further details.
 		(text "n[2..0]" (rect 160 155 195 169)(font "Arial" (font_size 8)))
 		(line (pt 216 160)(pt 200 160)(line_width 3))
 	)
+	(port
+		(pt 216 176)
+		(output)
+		(text "pin_name" (rect 0 0 54 14)(font "Arial" (font_size 8)))
+		(text "pin_name" (rect 141 171 195 185)(font "Arial" (font_size 8)))
+		(line (pt 216 176)(pt 200 176)(line_width 1))
+	)
+	(port
+		(pt 216 192)
+		(output)
+		(text "t" (rect 0 0 3 14)(font "Arial" (font_size 8)))
+		(text "t" (rect 192 187 195 201)(font "Arial" (font_size 8)))
+		(line (pt 216 192)(pt 200 192)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 200 176)(line_width 1))
+		(rectangle (rect 16 16 200 208)(line_width 1))
 	)
 )
