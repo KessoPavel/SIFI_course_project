@@ -15,7 +15,8 @@
 
 FUNCTION stack_decode 
 (
-	data[2..0]
+	data[2..0],
+	enable
 )
 
 RETURNS (

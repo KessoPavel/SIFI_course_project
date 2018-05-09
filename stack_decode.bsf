@@ -24,11 +24,18 @@ applicable agreement for further details.
 	(text "stack_decode" (rect 24 1 119 17)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 160 25 172)(font "Arial" ))
 	(port
-		(pt 0 88)
+		(pt 0 80)
 		(input)
 		(text "data[2..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "data[2..0]" (rect 20 82 65 95)(font "Arial" (font_size 8)))
-		(line (pt 0 88)(pt 16 88)(line_width 3))
+		(text "data[2..0]" (rect 20 74 65 87)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "enable" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "enable" (rect 20 90 53 103)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
 		(pt 128 32)
