@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY Memory
+set_global_assignment -name TOP_LEVEL_ENTITY CD_test
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:26:53  APRIL 21, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -49,23 +49,50 @@ set_global_assignment -name LL_MEMBER_STATE LOCKED -entity write_counter -sectio
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name CHECK_OUTPUTS OFF
 set_global_assignment -name MISC_FILE "C:/Users/Kesso/Desktop/SIFI_course_project/cache.dpf"
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE CD_test.vwf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name HEX_FILE ram.hex
+set_global_assignment -name BDF_FILE CD.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CD.vwf
+set_global_assignment -name BDF_FILE CD_test.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CD_test.vwf
 set_global_assignment -name BDF_FILE cache.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE cache.vwf
 set_global_assignment -name BDF_FILE cachMem.bdf
 set_global_assignment -name BDF_FILE write_counter.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE write_counter.vwf
 set_global_assignment -name BDF_FILE cacheControllBlock.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE cacheControllBlock.vwf
 set_global_assignment -name BDF_FILE Memory.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Memory.vwf
 set_global_assignment -name BDF_FILE trigger.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE trigger.vwf
 set_global_assignment -name BDF_FILE test.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE test.vwf
 set_global_assignment -name BDF_FILE ALD.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ALD.vwf
 set_global_assignment -name BDF_FILE stack.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE stack.vwf
+set_global_assignment -name BDF_FILE read_command.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE read_command.vwf
+set_global_assignment -name BDF_FILE CMP.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CMP.vwf
+set_global_assignment -name BDF_FILE ALD_NAND.bdf
+set_global_assignment -name BDF_FILE ALD_SLL.bdf
+set_global_assignment -name BDF_FILE RON.bdf
+set_global_assignment -name QIP_FILE lpm_and2.qip
 set_global_assignment -name QIP_FILE sub_1.qip
 set_global_assignment -name QIP_FILE tag_register.qip
 set_global_assignment -name QIP_FILE tag_compare.qip
+set_global_assignment -name QIP_FILE decode4.qip
 set_global_assignment -name QIP_FILE counter.qip
 set_global_assignment -name QIP_FILE lpm_compare1.qip
 set_global_assignment -name QIP_FILE wr_counter.qip
 set_global_assignment -name QIP_FILE bustri_2_14.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE write_counter.vwf
 set_global_assignment -name QIP_FILE compare_31.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE cachMem.vwf
 set_global_assignment -name QIP_FILE lpm_compare0.qip
@@ -75,31 +102,19 @@ set_global_assignment -name QIP_FILE sub1.qip
 set_global_assignment -name QIP_FILE bustri2.qip
 set_global_assignment -name QIP_FILE cache_register.qip
 set_global_assignment -name QIP_FILE cache_decode.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE test.vwf
 set_global_assignment -name QIP_FILE bustri14.qip
 set_global_assignment -name QIP_FILE memReadCounter.qip
-set_global_assignment -name QIP_FILE decode4.qip
-set_global_assignment -name HEX_FILE ram.hex
 set_global_assignment -name QIP_FILE trigger_counter.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE trigger.vwf
 set_global_assignment -name QIP_FILE lpm_or_2.qip
 set_global_assignment -name QIP_FILE bustri3.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE cache.vwf
 set_global_assignment -name QIP_FILE add_1.qip
 set_global_assignment -name QIP_FILE ald_add.qip
 set_global_assignment -name QIP_FILE ald_sub.qip
-set_global_assignment -name BDF_FILE CMP.bdf
 set_global_assignment -name QIP_FILE lpm_and0.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE CMP.vwf
 set_global_assignment -name QIP_FILE lpm_and1.qip
-set_global_assignment -name QIP_FILE lpm_and2.qip
-set_global_assignment -name BDF_FILE ALD_NAND.bdf
-set_global_assignment -name BDF_FILE ALD_SLL.bdf
 set_global_assignment -name QIP_FILE lpm_constant0.qip
 set_global_assignment -name QIP_FILE lpm_decode0.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE ALD.vwf
 set_global_assignment -name QIP_FILE lpm_constant1.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE stack.vwf
 set_global_assignment -name QIP_FILE stack_register.qip
 set_global_assignment -name QIP_FILE lpm_counter0.qip
 set_global_assignment -name QIP_FILE stack_decode.qip
@@ -109,31 +124,16 @@ set_global_assignment -name QIP_FILE lpm_decode1.qip
 set_global_assignment -name QIP_FILE writeMemCountter.qip
 set_global_assignment -name QIP_FILE decode2.qip
 set_global_assignment -name QIP_FILE bustri10.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE cacheControllBlock.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Memory.vwf
-set_global_assignment -name BDF_FILE CD.bdf
 set_global_assignment -name QIP_FILE CD_14_register.qip
 set_global_assignment -name QIP_FILE CD_register.qip
 set_global_assignment -name QIP_FILE add_10_1.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE CD.vwf
 set_global_assignment -name QIP_FILE read_command_counter.qip
 set_global_assignment -name QIP_FILE read_command_decode.qip
-set_global_assignment -name BDF_FILE CD_test.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE CD_test.vwf
 set_global_assignment -name QIP_FILE command_decode_counter.qip
 set_global_assignment -name QIP_FILE command_decode_decode.qip
-set_global_assignment -name BDF_FILE RON.bdf
 set_global_assignment -name QIP_FILE reg14.qip
 set_global_assignment -name QIP_FILE RON_decode.qip
-set_global_assignment -name BDF_FILE read_command.bdf
 set_global_assignment -name QIP_FILE lpm_or_5.qip
 set_global_assignment -name QIP_FILE lpm_and_5.qip
 set_global_assignment -name QIP_FILE lpm_or_7.qip
-set_global_assignment -name VECTOR_WAVEFORM_FILE read_command.vwf
 set_global_assignment -name QIP_FILE lpm_ram_dq0.qip
-set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Memory.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
