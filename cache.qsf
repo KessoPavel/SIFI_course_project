@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY CD_test
+set_global_assignment -name TOP_LEVEL_ENTITY read_command
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:26:53  APRIL 21, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -49,7 +49,6 @@ set_global_assignment -name LL_MEMBER_STATE LOCKED -entity write_counter -sectio
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
 set_global_assignment -name CHECK_OUTPUTS OFF
 set_global_assignment -name MISC_FILE "C:/Users/Kesso/Desktop/SIFI_course_project/cache.dpf"
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE CD_test.vwf
 set_global_assignment -name BDF_FILE cache.bdf
 set_global_assignment -name BDF_FILE cachMem.bdf
 set_global_assignment -name BDF_FILE write_counter.bdf
@@ -126,8 +125,14 @@ set_global_assignment -name QIP_FILE command_decode_decode.qip
 set_global_assignment -name BDF_FILE RON.bdf
 set_global_assignment -name QIP_FILE reg14.qip
 set_global_assignment -name QIP_FILE RON_decode.qip
+set_global_assignment -name BDF_FILE read_command.bdf
+set_global_assignment -name QIP_FILE lpm_or_5.qip
+set_global_assignment -name QIP_FILE lpm_and_5.qip
+set_global_assignment -name QIP_FILE lpm_or_7.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE read_command.vwf
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE read_command.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

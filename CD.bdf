@@ -1984,39 +1984,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2576 240 2640 288)
-	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
-	(text "inst71" (rect 3 37 32 49)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 15 32)(line_width 1))
-	)
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 15 16)(line_width 1))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 48 24)(pt 64 24)(line_width 1))
-	)
-	(drawing
-		(line (pt 14 36)(pt 25 36)(line_width 1))
-		(line (pt 14 13)(pt 25 13)(line_width 1))
-		(arc (pt 7 29)(pt 7 19)(rect -14 8 19 41)(line_width 1))
-		(arc (pt 49 24)(pt 25 13)(rect -6 13 57 76)(line_width 1))
-		(arc (pt 25 35)(pt 49 24)(rect -6 -27 57 36)(line_width 1))
-	)
-)
-(symbol
 	(rect 2360 440 2408 472)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst73" (rect 3 21 32 33)(font "Arial" ))
@@ -3719,20 +3686,6 @@ applicable agreement for further details.
 	(pt 2648 264)
 )
 (connector
-	(pt 2648 264)
-	(pt 2640 264)
-)
-(connector
-	(text "dec_en" (rect 2538 240 2573 252)(font "Arial" ))
-	(pt 2528 256)
-	(pt 2576 256)
-)
-(connector
-	(text "DR1_d_load" (rect 2512 256 2572 268)(font "Arial" ))
-	(pt 2576 272)
-	(pt 2504 272)
-)
-(connector
 	(pt 2696 56)
 	(pt 2720 56)
 	(bus)
@@ -4353,6 +4306,11 @@ applicable agreement for further details.
 	(pt 2104 400)
 	(pt 2048 400)
 )
+(connector
+	(text "DR1_d_load" (rect 2576 248 2636 260)(font "Arial" ))
+	(pt 2568 264)
+	(pt 2648 264)
+)
 (junction (pt 464 288))
 (junction (pt 1312 328))
 (junction (pt 1240 128))
@@ -4378,3 +4336,4 @@ applicable agreement for further details.
 (text "SP" (rect 632 856 665 880)(font "Arial" (font_size 16)))
 (text "Прямая 1-ый операнд" (rect 3080 232 3326 256)(font "Arial" (font_size 16)))
 (text "Прямая 2-ый операнд" (rect 3080 520 3326 544)(font "Arial" (font_size 16)))
+(text "Добавить заргузку при 10 адресации" (rect 2488 272 2712 286)(font "Arial" (font_size 8)))
