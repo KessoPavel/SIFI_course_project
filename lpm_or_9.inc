@@ -13,12 +13,19 @@
 --applicable agreement for further details.
 
 
-FUNCTION reg14 
+FUNCTION lpm_or_9 
 (
-	clock,
-	data[13..0]
+	data0,
+	data1,
+	data2,
+	data3,
+	data4,
+	data5,
+	data6,
+	data7,
+	data8
 )
 
 RETURNS (
-	q[13..0]
+	result
 );

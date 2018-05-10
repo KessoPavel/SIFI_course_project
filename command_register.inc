@@ -13,12 +13,13 @@
 --applicable agreement for further details.
 
 
-FUNCTION reg14 
+FUNCTION command_register 
 (
+	aclr,
 	clock,
-	data[13..0]
+	data[3..0]
 )
 
 RETURNS (
-	q[13..0]
+	q[3..0]
 );
