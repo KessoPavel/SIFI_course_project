@@ -13,12 +13,20 @@
 --applicable agreement for further details.
 
 
-FUNCTION trigger_counter 
+FUNCTION lpm_or_10 
 (
-	aclr,
-	clock
+	data0,
+	data1,
+	data2,
+	data3,
+	data4,
+	data5,
+	data6,
+	data7,
+	data8,
+	data9
 )
 
 RETURNS (
-	q[0..0]
+	result
 );
