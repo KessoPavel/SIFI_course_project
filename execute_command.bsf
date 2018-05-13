@@ -159,15 +159,15 @@ applicable agreement for further details.
 	(port
 		(pt 232 192)
 		(output)
-		(text "kill" (rect 0 0 12 14)(font "Arial" (font_size 8)))
-		(text "kill" (rect 199 187 211 201)(font "Arial" (font_size 8)))
+		(text "jmp_end" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "jmp_end" (rect 164 187 211 201)(font "Arial" (font_size 8)))
 		(line (pt 232 192)(pt 216 192)(line_width 1))
 	)
 	(port
 		(pt 232 208)
 		(output)
-		(text "continue_work" (rect 0 0 84 14)(font "Arial" (font_size 8)))
-		(text "continue_work" (rect 127 203 211 217)(font "Arial" (font_size 8)))
+		(text "kill" (rect 0 0 12 14)(font "Arial" (font_size 8)))
+		(text "kill" (rect 199 203 211 217)(font "Arial" (font_size 8)))
 		(line (pt 232 208)(pt 216 208)(line_width 1))
 	)
 	(port
