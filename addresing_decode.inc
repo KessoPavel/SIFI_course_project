@@ -15,8 +15,7 @@
 
 FUNCTION addresing_decode 
 (
-	data[1..0],
-	enable
+	data[1..0]
 )
 
 RETURNS (

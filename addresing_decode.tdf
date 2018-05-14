@@ -39,7 +39,6 @@ INCLUDE "lpm_decode.inc";
 SUBDESIGN addresing_decode
 (
 	data[1..0]	 : INPUT;
-	enable	 : INPUT;
 	eq0	 : OUTPUT;
 	eq1	 : OUTPUT;
 	eq3	 : OUTPUT;
@@ -58,7 +57,6 @@ BEGIN
 	eq0 = lpm_decode_component.eq[0..0];
 	eq1 = lpm_decode_component.eq[1..1];
 	eq3 = lpm_decode_component.eq[3..3];
-	lpm_decode_component.enable = enable;
 	lpm_decode_component.data[1..0] = data[1..0];
 END;
 
@@ -68,7 +66,7 @@ END;
 -- CNX file retrieval info
 -- ============================================================
 -- Retrieval info: PRIVATE: BaseDec NUMERIC "1"
--- Retrieval info: PRIVATE: EnableInput NUMERIC "1"
+-- Retrieval info: PRIVATE: EnableInput NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
 -- Retrieval info: PRIVATE: LPM_PIPELINE NUMERIC "0"
 -- Retrieval info: PRIVATE: Latency NUMERIC "0"
@@ -85,12 +83,10 @@ END;
 -- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "2"
 -- Retrieval info: USED_PORT: @eq 0 0 LPM_DECODES 0 OUTPUT NODEFVAL @eq[LPM_DECODES-1..0]
 -- Retrieval info: USED_PORT: data 0 0 2 0 INPUT NODEFVAL data[1..0]
--- Retrieval info: USED_PORT: enable 0 0 0 0 INPUT NODEFVAL enable
 -- Retrieval info: USED_PORT: eq0 0 0 0 0 OUTPUT NODEFVAL eq0
 -- Retrieval info: USED_PORT: eq1 0 0 0 0 OUTPUT NODEFVAL eq1
 -- Retrieval info: USED_PORT: eq3 0 0 0 0 OUTPUT NODEFVAL eq3
 -- Retrieval info: CONNECT: @data 0 0 2 0 data 0 0 2 0
--- Retrieval info: CONNECT: @enable 0 0 0 0 enable 0 0 0 0
 -- Retrieval info: CONNECT: eq0 0 0 0 0 @eq 0 0 1 0
 -- Retrieval info: CONNECT: eq1 0 0 0 0 @eq 0 0 1 1
 -- Retrieval info: CONNECT: eq3 0 0 0 0 @eq 0 0 1 3
