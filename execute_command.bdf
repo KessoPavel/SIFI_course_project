@@ -5880,19 +5880,9 @@ applicable agreement for further details.
 	(pt 1392 1664)
 )
 (connector
-	(text "x4" (rect 1360 1664 1371 1676)(font "Arial" ))
-	(pt 1352 1680)
-	(pt 1392 1680)
-)
-(connector
 	(text "x5" (rect 1360 1680 1371 1692)(font "Arial" ))
 	(pt 1352 1696)
 	(pt 1392 1696)
-)
-(connector
-	(text "nx6" (rect 1360 1696 1377 1708)(font "Arial" ))
-	(pt 1352 1712)
-	(pt 1392 1712)
 )
 (connector
 	(pt 1464 1656)
@@ -6682,17 +6672,27 @@ applicable agreement for further details.
 	(pt 1640 1352)
 )
 (connector
-	(text "nx6" (rect 1648 1352 1665 1364)(font "Arial" ))
-	(pt 1680 1368)
-	(pt 1640 1368)
-)
-(connector
 	(pt 1760 1440)
 	(pt 1760 1312)
 )
 (connector
 	(pt 1744 1312)
 	(pt 1760 1312)
+)
+(connector
+	(text "nx6" (rect 1648 1352 1665 1364)(font "Arial" ))
+	(pt 1680 1368)
+	(pt 1640 1368)
+)
+(connector
+	(text "nx4" (rect 1360 1664 1377 1676)(font "Arial" ))
+	(pt 1352 1680)
+	(pt 1392 1680)
+)
+(connector
+	(text "x6" (rect 1360 1696 1371 1708)(font "Arial" ))
+	(pt 1352 1712)
+	(pt 1392 1712)
 )
 (junction (pt 656 224))
 (junction (pt 656 320))

@@ -7013,6 +7013,38 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8)(line_width 1))
 	)
 )
+(symbol
+	(rect 920 2240 984 2288)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst187" (rect 3 37 38 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12)(line_width 1))
+		(line (pt 14 37)(pt 31 37)(line_width 1))
+		(line (pt 14 12)(pt 14 37)(line_width 1))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
+	)
+)
 (connector
 	(text "in_data[13..0]" (rect 1114 1272 1181 1284)(font "Arial" ))
 	(pt 1176 1288)
@@ -9564,15 +9596,6 @@ applicable agreement for further details.
 	(pt 1080 2296)
 )
 (connector
-	(pt 1176 2328)
-	(pt 1176 2344)
-)
-(connector
-	(text "load_result" (rect 1112 2328 1165 2340)(font "Arial" ))
-	(pt 1176 2344)
-	(pt 1104 2344)
-)
-(connector
 	(text "FR[1]" (rect 1232 2256 1260 2268)(font "Arial" ))
 	(pt 1224 2272)
 	(pt 1280 2272)
@@ -9599,15 +9622,6 @@ applicable agreement for further details.
 (connector
 	(pt 3704 1624)
 	(pt 3640 1624)
-)
-(connector
-	(pt 1176 2208)
-	(pt 1176 2184)
-)
-(connector
-	(text "load_result" (rect 1112 2192 1165 2204)(font "Arial" ))
-	(pt 1176 2208)
-	(pt 1104 2208)
 )
 (connector
 	(pt 4456 2528)
@@ -9649,10 +9663,6 @@ applicable agreement for further details.
 	(text "load_data_ec" (rect 4994 2184 5058 2196)(font "Arial" ))
 	(pt 4984 2200)
 	(pt 5056 2200)
-)
-(connector
-	(pt 5008 2936)
-	(pt 5008 2824)
 )
 (connector
 	(text "en_ALD_ec" (rect 4800 2928 4856 2940)(font "Arial" ))
@@ -10073,15 +10083,6 @@ applicable agreement for further details.
 	(pt 4128 2456)
 	(pt 4128 2520)
 	(bus)
-)
-(connector
-	(pt 4976 2824)
-	(pt 5008 2824)
-)
-(connector
-	(text "load_result" (rect 4984 2808 5037 2820)(font "Arial" ))
-	(pt 5008 2824)
-	(pt 5048 2824)
 )
 (connector
 	(pt 3512 968)
@@ -10584,6 +10585,49 @@ applicable agreement for further details.
 	(pt 4632 1288)
 	(pt 4632 1280)
 )
+(connector
+	(text "load_result" (rect 4984 2808 5037 2820)(font "Arial" ))
+	(pt 4976 2824)
+	(pt 5048 2824)
+)
+(connector
+	(text "en_ALD_ec" (rect 840 2256 896 2268)(font "Arial" ))
+	(pt 920 2272)
+	(pt 832 2272)
+)
+(connector
+	(text "load_result" (rect 848 2240 901 2252)(font "Arial" ))
+	(pt 840 2256)
+	(pt 920 2256)
+)
+(connector
+	(pt 984 2264)
+	(pt 1008 2264)
+)
+(connector
+	(pt 1176 2184)
+	(pt 1176 2208)
+)
+(connector
+	(pt 1176 2208)
+	(pt 1008 2208)
+)
+(connector
+	(pt 1176 2328)
+	(pt 1176 2344)
+)
+(connector
+	(pt 1008 2344)
+	(pt 1176 2344)
+)
+(connector
+	(pt 1008 2208)
+	(pt 1008 2264)
+)
+(connector
+	(pt 1008 2264)
+	(pt 1008 2344)
+)
 (junction (pt 1416 864))
 (junction (pt 1416 928))
 (junction (pt 1416 800))
@@ -10624,7 +10668,6 @@ applicable agreement for further details.
 (junction (pt 2832 2552))
 (junction (pt 4128 2456))
 (junction (pt 4128 2520))
-(junction (pt 5008 2824))
 (junction (pt 4728 968))
 (junction (pt 5576 2112))
 (junction (pt 608 1536))
@@ -10633,6 +10676,7 @@ applicable agreement for further details.
 (junction (pt 608 1328))
 (junction (pt 464 1392))
 (junction (pt 448 1264))
+(junction (pt 1008 2264))
 (text "IP" (rect 632 1480 655 1504)(font "Arial" (font_size 16)))
 (text "IR" (rect 1176 1232 1200 1256)(font "Arial" (font_size 16)))
 (text "IR1" (rect 1176 1400 1214 1424)(font "Arial" (font_size 16)))
