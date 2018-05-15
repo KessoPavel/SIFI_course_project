@@ -7173,6 +7173,70 @@ applicable agreement for further details.
 		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
 	)
 )
+(symbol
+	(rect 840 920 904 968)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 37 26 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12)(line_width 1))
+		(line (pt 14 37)(pt 31 37)(line_width 1))
+		(line (pt 14 12)(pt 14 37)(line_width 1))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
+	)
+)
+(symbol
+	(rect 1024 616 1088 664)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst37" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16)(line_width 1))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32)(line_width 1))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24)(line_width 1))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12)(line_width 1))
+		(line (pt 14 37)(pt 31 37)(line_width 1))
+		(line (pt 14 12)(pt 14 37)(line_width 1))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37)(line_width 1))
+	)
+)
 (connector
 	(text "y0" (rect 456 -336 468 -324)(font "Arial" ))
 	(pt 480 -320)
@@ -8108,16 +8172,6 @@ applicable agreement for further details.
 	(pt 80 744)
 )
 (connector
-	(text "y6" (rect 32 736 44 748)(font "Arial" ))
-	(pt 80 752)
-	(pt 24 752)
-)
-(connector
-	(text "y7" (rect 56 744 68 756)(font "Arial" ))
-	(pt 80 760)
-	(pt 48 760)
-)
-(connector
 	(text "y1" (rect 152 736 164 748)(font "Arial" ))
 	(pt 144 752)
 	(pt 168 752)
@@ -8586,11 +8640,6 @@ applicable agreement for further details.
 	(pt 752 1064)
 )
 (connector
-	(text "y6" (rect 824 1056 836 1068)(font "Arial" ))
-	(pt 816 1072)
-	(pt 848 1072)
-)
-(connector
 	(text "na0" (rect 792 696 809 708)(font "Arial" ))
 	(pt 784 712)
 	(pt 816 712)
@@ -8655,11 +8704,6 @@ applicable agreement for further details.
 	(text "a4" (rect 792 872 803 884)(font "Arial" ))
 	(pt 784 888)
 	(pt 816 888)
-)
-(connector
-	(text "y7" (rect 1008 792 1020 804)(font "Arial" ))
-	(pt 1000 808)
-	(pt 1032 808)
 )
 (connector
 	(text "na2" (rect 912 1000 929 1012)(font "Arial" ))
@@ -10863,11 +10907,6 @@ applicable agreement for further details.
 	(pt 1648 1040)
 )
 (connector
-	(text "nx3" (rect 1624 1056 1641 1068)(font "Arial" ))
-	(pt 1616 1072)
-	(pt 1648 1072)
-)
-(connector
 	(pt 1712 920)
 	(pt 1728 920)
 )
@@ -11000,6 +11039,67 @@ applicable agreement for further details.
 	(text "nclk" (rect 1992 896 2012 908)(font "Arial" ))
 	(pt 2024 912)
 	(pt 1984 912)
+)
+(connector
+	(text "y6" (rect 912 928 924 940)(font "Arial" ))
+	(pt 904 944)
+	(pt 936 944)
+)
+(connector
+	(pt 840 952)
+	(pt 824 952)
+)
+(connector
+	(pt 816 1072)
+	(pt 824 1072)
+)
+(connector
+	(text "nclk" (rect 816 920 836 932)(font "Arial" ))
+	(pt 840 936)
+	(pt 808 936)
+)
+(connector
+	(text "y7" (rect 1096 624 1108 636)(font "Arial" ))
+	(pt 1088 640)
+	(pt 1120 640)
+)
+(connector
+	(text "clk" (rect 992 616 1006 628)(font "Arial" ))
+	(pt 1024 632)
+	(pt 984 632)
+)
+(connector
+	(pt 1024 648)
+	(pt 1008 648)
+)
+(connector
+	(pt 1000 808)
+	(pt 1008 808)
+)
+(connector
+	(text "by7" (rect 992 782 1004 800)(font "Arial" )(vertical))
+	(pt 1008 808)
+	(pt 1008 648)
+)
+(connector
+	(text "by6" (rect 808 1046 820 1064)(font "Arial" )(vertical))
+	(pt 824 952)
+	(pt 824 1072)
+)
+(connector
+	(text "by6" (rect 32 736 50 748)(font "Arial" ))
+	(pt 80 752)
+	(pt 24 752)
+)
+(connector
+	(text "by7" (rect 56 744 74 756)(font "Arial" ))
+	(pt 80 760)
+	(pt 48 760)
+)
+(connector
+	(text "nx8" (rect 1624 1056 1641 1068)(font "Arial" ))
+	(pt 1616 1072)
+	(pt 1648 1072)
 )
 (junction (pt 608 -24))
 (junction (pt 608 72))
